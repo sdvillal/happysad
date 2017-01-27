@@ -42,7 +42,7 @@ __author__ = 'Santi Villalba'
 __version__ = '0.1.0'
 __license__ = '3-clause BSD'
 
-__all__ = ['synthetic_class', 'maybe_happy', 'make_happy',
+__all__ = ['happy', 'make_happy', 'maybe_happy',
            'sad', 'make_sad',
            'saddest',
            'RetrievableDescriptor', 'MemberView', 'ControlledSetter',
