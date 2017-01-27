@@ -226,7 +226,7 @@ def _original_class_contextmanager_factory(forget):
     return cm
 
 original_class = _original_class_contextmanager_factory(forget=False)
-forget_synthetic_class = _original_class_contextmanager_factory(forget=True)
+no_synthetic_class = _original_class_contextmanager_factory(forget=True)
 
 
 @contextmanager
@@ -412,6 +412,6 @@ maybe_happy = maybe_synthetic_class
 make_sad = force_original_class
 sad = original_class
 make_saddest = forget_synthetic_class
-saddest = forget_synthetic_class
+saddest = no_synthetic_class
 take_happy_pills = add_descriptors
 create_with_joy = intercept_creation
